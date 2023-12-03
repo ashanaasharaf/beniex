@@ -82,9 +82,44 @@ export class DashboardComponent implements OnInit {
 		]
 	};
 
-	tableData: any = [{
-
-	}]
+	tableData: any = [
+		{
+			id:1,
+			type:"Adservice",
+			click:"450",
+			percent:"1.5",
+			color:"#042B6D",
+			image:"bi bi-bucket-fill",
+			percentColor:'green'
+		},
+		{
+			id:2,
+			type:"Adrecord",
+			click:"360",
+			percent:"2.2",
+			color:"#88CD64;",
+			image:"bi bi-amazon",
+			percentColor:'green'
+		},
+		{
+			id:3,
+			type:"Masoffer",
+			click:"609",
+			percent:"2.6",
+			color:"#056FC0;",
+			image:"bi bi-apple",
+			percentColor:'red'
+		},
+		{
+			id:4,
+			type:"Wealthfront",
+			click:"800",
+			percent:"7.0",
+			color:"#4C46A3;",
+			image:"bi bi-amd",
+			percentColor:'grey'
+		}
+		]
 
 	ngOnInit(): void {
 	}
