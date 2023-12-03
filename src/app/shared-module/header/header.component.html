@@ -1,0 +1,19 @@
+<nav class="navbar bg-body-tertiary border-bottom">
+    <div class="container-fluid">
+        <h5 style="color: #0C0C0C;"><i class="bi bi-list ml-4" [ngClass]="overviewData == true ? '' :'button-close' " (click)="sideClick()"></i> Overview</h5>
+        <ul class="nav nav-pills">
+            <li class="nav-item border border-light-subtle mr-3">
+                <a class="nav-link" href="#"><i class="bi bi-archive" style="color: #64646A;"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle border border-light-subtle" style="color: #64646A;"
+                    data-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="bi bi-calendar"></i>
+                    This Month</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>

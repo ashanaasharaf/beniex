@@ -1,0 +1,119 @@
+<div id="wrapper" [ngClass]="sideData == true ? 'clicked' : ''">
+
+  <app-sidebar (sideData)="sideValue($event)" [ngClass]="sideData == true ? 'aside-none' : ''"></app-sidebar>
+  <app-header [overviewData]="sideData" (sideData)="sideValue($event)"></app-header>
+
+  <section id="content-wrapper">
+    <div class="row">
+      <div class="col-xl-3 col-sm-6 col-12 pr-0">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6 class="title-card">Pageviews</h6>
+                  <h3>278</h3>
+                  <span style="font-size: 12px;"><span style="color: green;font-weight: bold;">2.5% </span><span
+                      style="color: gray;">Epic 360.20 USD</span></span>
+                </div>
+                <div class="align-self-center">
+                  <img src="../../assets/grap.jpg" alt="Image" width="100px" height="60px" />
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12 p-0">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="media-body">
+                  <h6 class="title-card">Clicks</h6>
+                  <h3>278</h3>
+                  <span style="font-size: 12px;"><span style="color: rgb(246, 33, 33);font-weight: bold;">1.5%
+                    </span><span style="color: gray;">Epic 360.20 USD</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12 p-0">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="media-body">
+                  <h6 class="title-card">Conversations</h6>
+                  <h3>278</h3>
+                  <span style="font-size: 12px;"><span style="color: green;font-weight: bold;">2.5% </span><span
+                      style="color: gray;">Epic 360.20 USD</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12 pl-0">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-body">
+              <div class="media d-flex">
+                <div class="media-body">
+                  <h6 class="title-card">Commission</h6>
+                  <h3>278</h3>
+                  <span style="font-size: 12px;"><span style="color: green;font-weight: bold;">2.5% </span><span
+                      style="color: gray;">Epic 360.20 USD</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-9">
+        <canvasjs-chart [options]="chartOptions"></canvasjs-chart>
+      </div>
+      <div class="col-3">
+        <span class="table-title">Networks</span>
+        <table class="table table-light">
+          <thead>
+            <tr>
+              <th scope="col" style="font-size: 14px;color:grey">Type</th>
+              <th scope="col" style="font-size: 14px;color:grey">Click</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><i class="bi bi-bucket-fill" style="color: #042B6D;"></i> Adservice</td>
+              <td>450</td>
+              <td style="color: green;">1.5%</td>
+            </tr>
+            <!-- <tr>
+                    <td><i class="bi bi-amazon" style="color: #88CD64;"></i> Adrecord</td>
+                    <td>360</td>
+                    <td style="color: green;">2.2%</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-apple" style="color: #056FC0;"></i> Masoffer</td>
+                    <td>609</td>
+                    <td style="color: red;">2.6%</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-amd" style="color: #4C46A3;"></i> Wealthfront</td>
+                    <td>800</td>
+                    <td style="color: grey;">connect</td>
+                  </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</div>
